@@ -176,6 +176,7 @@ public class CrptApi {
     private final Lock requestsCounterLock;
     @Setter
     private ISerializer<Document> jsonSerializer;
+    @Setter
     private IHttpSender httpSender;
     private final ExecutorService requestsQueueSingleThreadExecutor;
     private final Timer requestsCounterRefreshTimer;
