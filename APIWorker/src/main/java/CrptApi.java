@@ -265,6 +265,7 @@ public class CrptApi {
                 } catch (TooMuchRequestsException ignore) {
                 } catch (InterruptedException ex) {
                     System.out.println("Single thread executor interrupted!");
+                    return "";
                 }
             }
         }
